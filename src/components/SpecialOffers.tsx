@@ -15,9 +15,9 @@ const SpecialOffers = () => {
             <div className="flex flex-col md:flex-row items-center">
               {/* Image Container */}
               <div className="p-6 md:w-1/3 flex justify-center">
-                {/* This would be an image */}
-                <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center">
-                  <span className="text-gray-400 text-xs">Fruits Image</span>
+                {/* Fruit Image */}
+                <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <img src="/fruit-bundle.jpg" alt="Fresh Fruits Bundle" className="w-full h-full object-cover" />
                 </div>
               </div>
               
@@ -59,9 +59,9 @@ const SpecialOffers = () => {
             <div className="flex flex-col md:flex-row items-center">
               {/* Image Container */}
               <div className="p-6 md:w-1/3 flex justify-center">
-                {/* This would be an image */}
-                <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center">
-                  <span className="text-gray-400 text-xs">Groceries Image</span>
+                {/* Groceries Image */}
+                <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <img src="/grocery-essentials.jpg" alt="Monthly Essentials Pack" className="w-full h-full object-cover" />
                 </div>
               </div>
               

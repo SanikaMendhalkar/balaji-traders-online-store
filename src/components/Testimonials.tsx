@@ -8,7 +8,7 @@ const testimonials = [
     id: 1,
     name: 'Rajesh Kumar',
     location: 'Local Customer',
-    image: '/user1.jpg',
+    image: '/testimonial-user1.jpg',
     rating: 5,
     text: "I've been shopping at Shree Balaji Traders for years. Their fruits and vegetables are always fresh, and the staff is very helpful."
   },
@@ -16,7 +16,7 @@ const testimonials = [
     id: 2,
     name: 'Priya Sharma',
     location: 'Regular Customer',
-    image: '/user2.jpg',
+    image: '/testimonial-user2.jpg',
     rating: 4,
     text: 'Great selection of products at reasonable prices. The online ordering system makes shopping so convenient, and delivery is always prompt.'
   },
@@ -24,7 +24,7 @@ const testimonials = [
     id: 3,
     name: 'Amit Patel',
     location: 'New Customer',
-    image: '/user3.jpg',
+    image: '/testimonial-user3.jpg',
     rating: 5,
     text: "Recently started shopping here and I'm impressed by the quality of organic products. Will definitely continue ordering from Balaji Traders."
   }
