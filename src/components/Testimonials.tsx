@@ -9,7 +9,7 @@ const testimonials = [
     location: 'Local Customer',
     image: 'user1',
     rating: 5,
-    text: 'I've been shopping at Shree Balaji Traders for years. Their fruits and vegetables are always fresh, and the staff is very helpful.'
+    text: "I've been shopping at Shree Balaji Traders for years. Their fruits and vegetables are always fresh, and the staff is very helpful."
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const testimonials = [
     location: 'New Customer',
     image: 'user3',
     rating: 5,
-    text: 'Recently started shopping here and I'm impressed by the quality of organic products. Will definitely continue ordering from Balaji Traders.'
+    text: "Recently started shopping here and I'm impressed by the quality of organic products. Will definitely continue ordering from Balaji Traders."
   }
 ];
 
