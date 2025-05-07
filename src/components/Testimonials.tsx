@@ -1,13 +1,14 @@
 
 import React from 'react';
-import { Star, User } from 'lucide-react';
+import { Star } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const testimonials = [
   {
     id: 1,
     name: 'Rajesh Kumar',
     location: 'Local Customer',
-    image: 'user1',
+    image: '/user1.jpg',
     rating: 5,
     text: "I've been shopping at Shree Balaji Traders for years. Their fruits and vegetables are always fresh, and the staff is very helpful."
   },
@@ -15,7 +16,7 @@ const testimonials = [
     id: 2,
     name: 'Priya Sharma',
     location: 'Regular Customer',
-    image: 'user2',
+    image: '/user2.jpg',
     rating: 4,
     text: 'Great selection of products at reasonable prices. The online ordering system makes shopping so convenient, and delivery is always prompt.'
   },
@@ -23,7 +24,7 @@ const testimonials = [
     id: 3,
     name: 'Amit Patel',
     location: 'New Customer',
-    image: 'user3',
+    image: '/user3.jpg',
     rating: 5,
     text: "Recently started shopping here and I'm impressed by the quality of organic products. Will definitely continue ordering from Balaji Traders."
   }
@@ -55,9 +56,12 @@ const Testimonials = () => {
               
               {/* Customer Info */}
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3">
-                  <User size={16} className="text-gray-400" />
-                </div>
+                <Avatar className="h-10 w-10 mr-3">
+                  <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                  <AvatarFallback className="bg-gray-200 text-gray-500">
+                    {testimonial.name.split(' ').map(n => n[0]).join('')}
+                  </AvatarFallback>
+                </Avatar>
                 <div>
                   <h4 className="font-medium text-grocery-dark">{testimonial.name}</h4>
                   <p className="text-sm text-gray-500">{testimonial.location}</p>
