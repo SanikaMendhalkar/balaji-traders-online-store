@@ -107,19 +107,22 @@ const Header = () => {
             <DropdownMenuTrigger className="text-grocery-dark hover:text-grocery-green font-medium transition-colors">Categories</DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>
-                <Link to="/category/fruits-vegetables">Fruits & Vegetables</Link>
+                <Link to="/categories" className="w-full">All Categories</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/category/dairy-bakery">Dairy & Bakery</Link>
+                <Link to="/categories" className="w-full">Fruits & Vegetables</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/category/staples">Staples & Grains</Link>
+                <Link to="/categories" className="w-full">Dairy & Bakery</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/category/snacks">Snacks & Beverages</Link>
+                <Link to="/categories" className="w-full">Staples & Grains</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/category/household">Household Items</Link>
+                <Link to="/categories" className="w-full">Snacks & Beverages</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/categories" className="w-full">Household Items</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -142,31 +145,31 @@ const Header = () => {
               />
             </div>
             <nav className="flex flex-col space-y-3">
-              <Link to="/" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <Home size={20} className="mr-3 text-grocery-green" />
                 <span>Home</span>
               </Link>
-              <Link to="/categories" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/categories" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <Package size={20} className="mr-3 text-grocery-green" />
                 <span>Categories</span>
               </Link>
-              <Link to="/offers" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/offers" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <Package size={20} className="mr-3 text-grocery-green" />
                 <span>Offers</span>
               </Link>
-              <Link to="/orders" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/track-order" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <Clock size={20} className="mr-3 text-grocery-green" />
-                <span>My Orders</span>
+                <span>Track Order</span>
               </Link>
-              <Link to="/account" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/account" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <User size={20} className="mr-3 text-grocery-green" />
                 <span>My Account</span>
               </Link>
-              <Link to="/wishlist" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/wishlist" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <Heart size={20} className="mr-3 text-grocery-green" />
                 <span>Wishlist</span>
               </Link>
-              <Link to="/cart" className="flex items-center p-2 hover:bg-gray-100 rounded">
+              <Link to="/cart" className="flex items-center p-2 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                 <ShoppingCart size={20} className="mr-3 text-grocery-green" />
                 <span>Cart</span>
                 {cartItemCount > 0 && (
